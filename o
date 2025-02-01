@@ -155,8 +155,6 @@
 [DEBUG] DNA sequence: GT
 [DEBUG] Droplet with seed 1111 encoded to DNA: GT
 [DEBUG] All DNA encoded droplets: [('0000', 'TC'), ('0001', 'AG'), ('0010', 'CC'), ('0011', 'CA'), ('0100', 'GA'), ('0101', 'TC'), ('0110', 'CT'), ('0111', 'CG'), ('1000', 'GA'), ('1001', 'GC'), ('1010', 'CC'), ('1011', 'TC'), ('1100', 'TT'), ('1101', 'AG'), ('1110', 'AT'), ('1111', 'GT')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['0101', '0011', '1100', '0100', '1110', '0110', '0100', '1001']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'TC' to binary: 1101
@@ -376,8 +374,6 @@
 [DEBUG] DNA sequence: TT
 [DEBUG] Droplet with seed 1111 encoded to DNA: TT
 [DEBUG] All DNA encoded droplets: [('0000', 'GG'), ('0001', 'AG'), ('0010', 'CT'), ('0011', 'GG'), ('0100', 'TG'), ('0101', 'AA'), ('0110', 'AG'), ('0111', 'TA'), ('1000', 'GG'), ('1001', 'TG'), ('1010', 'CT'), ('1011', 'GG'), ('1100', 'GT'), ('1101', 'AG'), ('1110', 'GA'), ('1111', 'TT')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['0111', '1000', '0100', '1010', '0110', '1100', '0100', '1110']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'GG' to binary: 1010
@@ -597,8 +593,6 @@
 [DEBUG] DNA sequence: AG
 [DEBUG] Droplet with seed 1111 encoded to DNA: AG
 [DEBUG] All DNA encoded droplets: [('0000', 'TT'), ('0001', 'GG'), ('0010', 'GA'), ('0011', 'TG'), ('0100', 'AT'), ('0101', 'CG'), ('0110', 'AT'), ('0111', 'AA'), ('1000', 'CG'), ('1001', 'TA'), ('1010', 'GA'), ('1011', 'TT'), ('1100', 'AA'), ('1101', 'GG'), ('1110', 'TC'), ('1111', 'AG')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['1000', '1101', '1101', '1110', '0111', '0000', '0011', '1100']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'TT' to binary: 1111
@@ -818,8 +812,6 @@
 [DEBUG] DNA sequence: TG
 [DEBUG] Droplet with seed 1111 encoded to DNA: TG
 [DEBUG] All DNA encoded droplets: [('0000', 'CT'), ('0001', 'TC'), ('0010', 'TT'), ('0011', 'GC'), ('0100', 'CC'), ('0101', 'CG'), ('0110', 'CT'), ('0111', 'CC'), ('1000', 'TC'), ('1001', 'TG'), ('1010', 'TT'), ('1011', 'CT'), ('1100', 'TG'), ('1101', 'TC'), ('1110', 'TG'), ('1111', 'TG')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['1111', '1110', '1100', '1001', '0001', '0101', '1001', '1110']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'CT' to binary: 0111
@@ -1039,8 +1031,6 @@
 [DEBUG] DNA sequence: GA
 [DEBUG] Droplet with seed 1111 encoded to DNA: GA
 [DEBUG] All DNA encoded droplets: [('0000', 'CC'), ('0001', 'AT'), ('0010', 'GA'), ('0011', 'CC'), ('0100', 'TC'), ('0101', 'CG'), ('0110', 'TC'), ('0111', 'TG'), ('1000', 'GT'), ('1001', 'GT'), ('1010', 'GA'), ('1011', 'CC'), ('1100', 'GA'), ('1101', 'AT'), ('1110', 'GA'), ('1111', 'GA')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['1000', '1000', '1000', '0101', '1011', '1110', '1110', '1011']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'CC' to binary: 0101
@@ -1260,8 +1250,6 @@
 [DEBUG] DNA sequence: AA
 [DEBUG] Droplet with seed 1111 encoded to DNA: AA
 [DEBUG] All DNA encoded droplets: [('0000', 'TC'), ('0001', 'GT'), ('0010', 'CC'), ('0011', 'AA'), ('0100', 'CC'), ('0101', 'TA'), ('0110', 'GG'), ('0111', 'AC'), ('1000', 'TA'), ('1001', 'CG'), ('1010', 'CC'), ('1011', 'TC'), ('1100', 'GA'), ('1101', 'GT'), ('1110', 'GG'), ('1111', 'AA')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['0101', '1010', '0101', '0000', '1110', '0001', '1011', '0110']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'TC' to binary: 1101
@@ -1481,8 +1469,6 @@
 [DEBUG] DNA sequence: CT
 [DEBUG] Droplet with seed 1111 encoded to DNA: CT
 [DEBUG] All DNA encoded droplets: [('0000', 'GA'), ('0001', 'TT'), ('0010', 'TG'), ('0011', 'TA'), ('0100', 'AG'), ('0101', 'AA'), ('0110', 'CA'), ('0111', 'AT'), ('1000', 'AT'), ('1001', 'TA'), ('1010', 'TG'), ('1011', 'GA'), ('1100', 'AG'), ('1101', 'TT'), ('1110', 'GA'), ('1111', 'CT')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['1110', '1000', '1110', '1100', '0001', '0011', '0100', '1100']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'GA' to binary: 1000
@@ -1702,8 +1688,6 @@
 [DEBUG] DNA sequence: TT
 [DEBUG] Droplet with seed 1111 encoded to DNA: TT
 [DEBUG] All DNA encoded droplets: [('0000', 'AG'), ('0001', 'TT'), ('0010', 'CG'), ('0011', 'AA'), ('0100', 'AC'), ('0101', 'GG'), ('0110', 'TG'), ('0111', 'AA'), ('1000', 'AT'), ('1001', 'CC'), ('1010', 'CG'), ('1011', 'AG'), ('1100', 'CC'), ('1101', 'TT'), ('1110', 'TG'), ('1111', 'TT')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['0110', '1110', '0001', '0000', '1110', '0000', '0111', '0101']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'AG' to binary: 0010
@@ -1923,8 +1907,6 @@
 [DEBUG] DNA sequence: TT
 [DEBUG] Droplet with seed 1111 encoded to DNA: TT
 [DEBUG] All DNA encoded droplets: [('0000', 'AA'), ('0001', 'AC'), ('0010', 'AG'), ('0011', 'GC'), ('0100', 'TG'), ('0101', 'GA'), ('0110', 'TT'), ('0111', 'GT'), ('1000', 'TG'), ('1001', 'AG'), ('1010', 'AG'), ('1011', 'AA'), ('1100', 'TG'), ('1101', 'AC'), ('1110', 'CG'), ('1111', 'TT')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['0010', '0110', '0111', '1001', '0110', '1011', '0010', '0010']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'AA' to binary: 0000
@@ -2144,8 +2126,6 @@
 [DEBUG] DNA sequence: GC
 [DEBUG] Droplet with seed 1111 encoded to DNA: GC
 [DEBUG] All DNA encoded droplets: [('0000', 'TT'), ('0001', 'TT'), ('0010', 'GA'), ('0011', 'CC'), ('0100', 'GG'), ('0101', 'CG'), ('0110', 'TT'), ('0111', 'AG'), ('1000', 'TT'), ('1001', 'GT'), ('1010', 'GA'), ('1011', 'TT'), ('1100', 'AA'), ('1101', 'TT'), ('1110', 'GG'), ('1111', 'GC')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['1000', '1010', '1111', '0101', '0000', '0010', '0100', '1011']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'TT' to binary: 1111
@@ -2365,8 +2345,6 @@
 [DEBUG] DNA sequence: AG
 [DEBUG] Droplet with seed 1111 encoded to DNA: AG
 [DEBUG] All DNA encoded droplets: [('0000', 'CT'), ('0001', 'TG'), ('0010', 'CC'), ('0011', 'GC'), ('0100', 'TA'), ('0101', 'TT'), ('0110', 'TG'), ('0111', 'AT'), ('1000', 'CT'), ('1001', 'AG'), ('1010', 'CC'), ('1011', 'CT'), ('1100', 'GA'), ('1101', 'TG'), ('1110', 'CT'), ('1111', 'AG')]
-[DEBUG] Splitting binary string into chunks of size 4.
-[DEBUG] Resulting chunks: ['0101', '0111', '0101', '1001', '1011', '0011', '0101', '0010']
 [DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
 [DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
 [DEBUG] Converted DNA 'CT' to binary: 0111

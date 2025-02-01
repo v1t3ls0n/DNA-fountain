@@ -148,7 +148,9 @@ class DNAFountain:
 
 
 class DNAFountainTester:
-    def __init__(self):
+    def __init__(self, chunk_size=4):
+        """Initialize the tester with a fixed chunk size."""
+        self.chunk_size = chunk_size
         self.binary_messages = [
             "01010011110001001110011001001001",
             "01111000010010100110110001001110",
@@ -164,14 +166,14 @@ class DNAFountainTester:
         ]
 
     def run_tests(self):
-        print(f"""\n[TEST] Initializing DNAFountain with chunk_size=4...""")
-        self.dna_fountain = DNAFountain(chunk_size=4)
+        print(f"""\n[TEST] Initializing DNAFountain with chunk_size={self.chunk_size}...""")
+        self.dna_fountain = DNAFountain(chunk_size=self.chunk_size)
         passed = True
         
         for binary_message in self.binary_messages:
+            num_chunks = len(binary_message) // self.chunk_size  # Compute num_chunks dynamically
             print(f"""\n[TEST] Testing binary message: {binary_message}""")
             dna_droplets = self.dna_fountain.encode_dna_fountain(binary_message)
-            num_chunks = len(self.dna_fountain.split_into_chunks(binary_message))
             decoded_binary = self.dna_fountain.decode_dna_fountain(dna_droplets, num_chunks)
             print(f"""\n[TEST] Original: {binary_message}""")
             print(f"""\n[TEST] Decoded : {decoded_binary}""")
