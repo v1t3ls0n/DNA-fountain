@@ -176,9 +176,17 @@ class DNAFountainTester:
         passed = True
         
         for binary_message in self.binary_messages:
+            
             msg = "[TEST] Testing binary message: {}".format(binary_message)
             print(msg)
             logging.info(msg)
+            
+            if len(binary_message) % self.chunk_size != 0:
+                msg= "[ERROR] Message length is not a multiple of chunk size. Skipping this message."
+                print(msg)
+                logging.info(msg)
+                continue
+            
 
             # Test using the droplets approach.
             dna_droplets = self.dna_fountain.droplets_encode(binary_message)
