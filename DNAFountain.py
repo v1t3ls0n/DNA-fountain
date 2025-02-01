@@ -9,7 +9,6 @@ class DNAFountain:
         ('1000', 6), ('1001', 1), ('1010', 1), ('1011', 2),
         ('1100', 7), ('1101', 2), ('1110', 1), ('1111', 4)
     ]
-    
     BINARY_TO_DNA = {'00': 'A', '01': 'C', '10': 'G', '11': 'T'}
     DNA_TO_BINARY = {v: k for k, v in BINARY_TO_DNA.items()}
 
