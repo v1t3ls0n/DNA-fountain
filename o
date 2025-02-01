@@ -1,0 +1,2437 @@
+
+[TEST] Initializing DNAFountain with chunk_size=4...
+[DEBUG] DNAFountain initialized with chunk_size: 4
+[DEBUG] Precomputed degree map: {'0000': 2, '0001': 2, '0010': 1, '0011': 1, '0100': 2, '0101': 4, '0110': 2, '0111': 1, '1000': 6, '1001': 1, '1010': 1, '1011': 2, '1100': 7, '1101': 2, '1110': 1, '1111': 4}
+
+[TEST] Testing binary message: 01010011110001001110011001001001
+[DEBUG] Encoding binary data using DNA Fountain: 01010011110001001110011001001001
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0101', '0011', '1100', '0100', '1110', '0110', '0100', '1001']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0100', '1001']
+[DEBUG] XORing chunks: ['0100', '1001']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['1100', '1110']
+[DEBUG] XORing chunks: ['1100', '1110']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['0100']
+[DEBUG] XORing chunks: ['0100']
+[DEBUG] XOR result: 0100
+[DEBUG] Combined chunk (after XOR): 0100
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['0100', '1100']
+[DEBUG] XORing chunks: ['0100', '1100']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['1110', '0110', '1100', '1001']
+[DEBUG] XORing chunks: ['1110', '0110', '1100', '1001']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['0011', '0100']
+[DEBUG] XORing chunks: ['0011', '0100']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0110']
+[DEBUG] XORing chunks: ['0110']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['0100', '1100', '1001', '0011', '1110', '0100']
+[DEBUG] XORing chunks: ['0100', '1100', '1001', '0011', '1110', '0100']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1001']
+[DEBUG] XORing chunks: ['1001']
+[DEBUG] XOR result: 1001
+[DEBUG] Combined chunk (after XOR): 1001
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1001', '0100']
+[DEBUG] XORing chunks: ['1001', '0100']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1001', '1100', '0110', '1110', '0100', '0101', '0011']
+[DEBUG] XORing chunks: ['1001', '1100', '0110', '1110', '0100', '0101', '0011']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['1110', '1100']
+[DEBUG] XORing chunks: ['1110', '1100']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['0011']
+[DEBUG] XORing chunks: ['0011']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['0100', '0101', '1110', '0100']
+[DEBUG] XORing chunks: ['0100', '0101', '1110', '0100']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Generated droplets: [('0000', '1101'), ('0001', '0010'), ('0010', '0101'), ('0011', '0100'), ('0100', '1000'), ('0101', '1101'), ('0110', '0111'), ('0111', '0110'), ('1000', '1000'), ('1001', '1001'), ('1010', '0101'), ('1011', '1101'), ('1100', '1111'), ('1101', '0010'), ('1110', '0011'), ('1111', '1011')]
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 0000 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0001 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0010 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 0100
+[DEBUG] DNA sequence: CA
+[DEBUG] Droplet with seed 0011 encoded to DNA: CA
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 0100 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 0101 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 0110 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 0111 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1000 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1001
+[DEBUG] DNA sequence: GC
+[DEBUG] Droplet with seed 1001 encoded to DNA: GC
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 1010 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 1011 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1100 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1101 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 1110 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 1111 encoded to DNA: GT
+[DEBUG] All DNA encoded droplets: [('0000', 'TC'), ('0001', 'AG'), ('0010', 'CC'), ('0011', 'CA'), ('0100', 'GA'), ('0101', 'TC'), ('0110', 'CT'), ('0111', 'CG'), ('1000', 'GA'), ('1001', 'GC'), ('1010', 'CC'), ('1011', 'TC'), ('1100', 'TT'), ('1101', 'AG'), ('1110', 'AT'), ('1111', 'GT')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0101', '0011', '1100', '0100', '1110', '0110', '0100', '1001']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'CA' to binary: 0100
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'GC' to binary: 1001
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 0101
+[DEBUG] Directly assigned chunk at index 3: 0100
+[DEBUG] Directly assigned chunk at index 5: 0110
+[DEBUG] Directly assigned chunk at index 7: 1001
+[DEBUG] Directly assigned chunk at index 0: 0101
+[DEBUG] Directly assigned chunk at index 1: 0011
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 1101 has one unknown index: 6 and known chunks: ['1001']
+[DEBUG] XORing chunks: ['1101', '1001']
+[DEBUG] XOR result: 0100
+[DEBUG] Inferred missing chunk at index 6: 0100
+[DEBUG] Droplet [3, 2] with binary data 1000 has one unknown index: 2 and known chunks: ['0100']
+[DEBUG] XORing chunks: ['1000', '0100']
+[DEBUG] XOR result: 1100
+[DEBUG] Inferred missing chunk at index 2: 1100
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 1101 has one unknown index: 4 and known chunks: ['0110', '1100', '1001']
+[DEBUG] XORing chunks: ['1101', '0110', '1100', '1001']
+[DEBUG] XOR result: 1110
+[DEBUG] Inferred missing chunk at index 4: 1110
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['0101', '0011', '1100', '0100', '1110', '0110', '0100', '1001']
+[DEBUG] Decoded binary data: 01010011110001001110011001001001
+
+[TEST] Original: 01010011110001001110011001001001
+
+[TEST] Decoded : 01010011110001001110011001001001
+
+[TEST] Testing binary message: 01111000010010100110110001001110
+[DEBUG] Encoding binary data using DNA Fountain: 01111000010010100110110001001110
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0111', '1000', '0100', '1010', '0110', '1100', '0100', '1110']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0100', '1110']
+[DEBUG] XORing chunks: ['0100', '1110']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['0100', '0110']
+[DEBUG] XORing chunks: ['0100', '0110']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0111']
+[DEBUG] XORing chunks: ['0111']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['1010']
+[DEBUG] XORing chunks: ['1010']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['1010', '0100']
+[DEBUG] XORing chunks: ['1010', '0100']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['0110', '1100', '0100', '1110']
+[DEBUG] XORing chunks: ['0110', '1100', '0100', '1110']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1000', '1010']
+[DEBUG] XORing chunks: ['1000', '1010']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['1100']
+[DEBUG] XORing chunks: ['1100']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['1010', '0100', '1110', '1000', '0110', '0100']
+[DEBUG] XORing chunks: ['1010', '0100', '1110', '1000', '0110', '0100']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0111']
+[DEBUG] XORing chunks: ['0111']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1110', '0100']
+[DEBUG] XORing chunks: ['1110', '0100']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1110', '0100', '1100', '0110', '0100', '0111', '1000']
+[DEBUG] XORing chunks: ['1110', '0100', '1100', '0110', '0100', '0111', '1000']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['0110', '0100']
+[DEBUG] XORing chunks: ['0110', '0100']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['1010', '0111', '0110', '0100']
+[DEBUG] XORing chunks: ['1010', '0111', '0110', '0100']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Generated droplets: [('0000', '1010'), ('0001', '0010'), ('0010', '0111'), ('0011', '1010'), ('0100', '1110'), ('0101', '0000'), ('0110', '0010'), ('0111', '1100'), ('1000', '1010'), ('1001', '1110'), ('1010', '0111'), ('1011', '1010'), ('1100', '1011'), ('1101', '0010'), ('1110', '1000'), ('1111', '1111')]
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 0000 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0001 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 0010 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 0011 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0100 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0101 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0110 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 0111 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 1000 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1001 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 1010 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 1011 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 1100 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1101 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1110 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1111 encoded to DNA: TT
+[DEBUG] All DNA encoded droplets: [('0000', 'GG'), ('0001', 'AG'), ('0010', 'CT'), ('0011', 'GG'), ('0100', 'TG'), ('0101', 'AA'), ('0110', 'AG'), ('0111', 'TA'), ('1000', 'GG'), ('1001', 'TG'), ('1010', 'CT'), ('1011', 'GG'), ('1100', 'GT'), ('1101', 'AG'), ('1110', 'GA'), ('1111', 'TT')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0111', '1000', '0100', '1010', '0110', '1100', '0100', '1110']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 0111
+[DEBUG] Directly assigned chunk at index 3: 1010
+[DEBUG] Directly assigned chunk at index 5: 1100
+[DEBUG] Directly assigned chunk at index 7: 1110
+[DEBUG] Directly assigned chunk at index 0: 0111
+[DEBUG] Directly assigned chunk at index 1: 1000
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 1010 has one unknown index: 6 and known chunks: ['1110']
+[DEBUG] XORing chunks: ['1010', '1110']
+[DEBUG] XOR result: 0100
+[DEBUG] Inferred missing chunk at index 6: 0100
+[DEBUG] Droplet [3, 2] with binary data 1110 has one unknown index: 2 and known chunks: ['1010']
+[DEBUG] XORing chunks: ['1110', '1010']
+[DEBUG] XOR result: 0100
+[DEBUG] Inferred missing chunk at index 2: 0100
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 0000 has one unknown index: 4 and known chunks: ['1100', '0100', '1110']
+[DEBUG] XORing chunks: ['0000', '1100', '0100', '1110']
+[DEBUG] XOR result: 0110
+[DEBUG] Inferred missing chunk at index 4: 0110
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['0111', '1000', '0100', '1010', '0110', '1100', '0100', '1110']
+[DEBUG] Decoded binary data: 01111000010010100110110001001110
+
+[TEST] Original: 01111000010010100110110001001110
+
+[TEST] Decoded : 01111000010010100110110001001110
+
+[TEST] Testing binary message: 10001101110111100111000000111100
+[DEBUG] Encoding binary data using DNA Fountain: 10001101110111100111000000111100
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1000', '1101', '1101', '1110', '0111', '0000', '0011', '1100']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0011', '1100']
+[DEBUG] XORing chunks: ['0011', '1100']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['1101', '0111']
+[DEBUG] XORing chunks: ['1101', '0111']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['1110', '1101']
+[DEBUG] XORing chunks: ['1110', '1101']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['0111', '0000', '1101', '1100']
+[DEBUG] XORing chunks: ['0111', '0000', '1101', '1100']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1101', '1110']
+[DEBUG] XORing chunks: ['1101', '1110']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0000']
+[DEBUG] XORing chunks: ['0000']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['1110', '1101', '1100', '1101', '0111', '0011']
+[DEBUG] XORing chunks: ['1110', '1101', '1100', '1101', '0111', '0011']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1100']
+[DEBUG] XORing chunks: ['1100']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1100', '0011']
+[DEBUG] XORing chunks: ['1100', '0011']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1100', '1101', '0000', '0111', '0011', '1000', '1101']
+[DEBUG] XORing chunks: ['1100', '1101', '0000', '0111', '0011', '1000', '1101']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['0111', '1101']
+[DEBUG] XORing chunks: ['0111', '1101']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1101']
+[DEBUG] XORing chunks: ['1101']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['1110', '1000', '0111', '0011']
+[DEBUG] XORing chunks: ['1110', '1000', '0111', '0011']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Generated droplets: [('0000', '1111'), ('0001', '1010'), ('0010', '1000'), ('0011', '1110'), ('0100', '0011'), ('0101', '0110'), ('0110', '0011'), ('0111', '0000'), ('1000', '0110'), ('1001', '1100'), ('1010', '1000'), ('1011', '1111'), ('1100', '0000'), ('1101', '1010'), ('1110', '1101'), ('1111', '0010')]
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0000 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 0001 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 0010 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0011 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 0100 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 0101 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 0110 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0111 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 1000 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 1001 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1010 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1011 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 1100 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 1101 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 1110 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1111 encoded to DNA: AG
+[DEBUG] All DNA encoded droplets: [('0000', 'TT'), ('0001', 'GG'), ('0010', 'GA'), ('0011', 'TG'), ('0100', 'AT'), ('0101', 'CG'), ('0110', 'AT'), ('0111', 'AA'), ('1000', 'CG'), ('1001', 'TA'), ('1010', 'GA'), ('1011', 'TT'), ('1100', 'AA'), ('1101', 'GG'), ('1110', 'TC'), ('1111', 'AG')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1000', '1101', '1101', '1110', '0111', '0000', '0011', '1100']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 1000
+[DEBUG] Directly assigned chunk at index 3: 1110
+[DEBUG] Directly assigned chunk at index 5: 0000
+[DEBUG] Directly assigned chunk at index 7: 1100
+[DEBUG] Directly assigned chunk at index 0: 1000
+[DEBUG] Directly assigned chunk at index 1: 1101
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 1111 has one unknown index: 6 and known chunks: ['1100']
+[DEBUG] XORing chunks: ['1111', '1100']
+[DEBUG] XOR result: 0011
+[DEBUG] Inferred missing chunk at index 6: 0011
+[DEBUG] Droplet [3, 2] with binary data 0011 has one unknown index: 2 and known chunks: ['1110']
+[DEBUG] XORing chunks: ['0011', '1110']
+[DEBUG] XOR result: 1101
+[DEBUG] Inferred missing chunk at index 2: 1101
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 0110 has one unknown index: 4 and known chunks: ['0000', '1101', '1100']
+[DEBUG] XORing chunks: ['0110', '0000', '1101', '1100']
+[DEBUG] XOR result: 0111
+[DEBUG] Inferred missing chunk at index 4: 0111
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['1000', '1101', '1101', '1110', '0111', '0000', '0011', '1100']
+[DEBUG] Decoded binary data: 10001101110111100111000000111100
+
+[TEST] Original: 10001101110111100111000000111100
+
+[TEST] Decoded : 10001101110111100111000000111100
+
+[TEST] Testing binary message: 11111110110010010001010110011110
+[DEBUG] Encoding binary data using DNA Fountain: 11111110110010010001010110011110
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1111', '1110', '1100', '1001', '0001', '0101', '1001', '1110']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['1001', '1110']
+[DEBUG] XORing chunks: ['1001', '1110']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['1100', '0001']
+[DEBUG] XORing chunks: ['1100', '0001']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1111']
+[DEBUG] XORing chunks: ['1111']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['1001']
+[DEBUG] XORing chunks: ['1001']
+[DEBUG] XOR result: 1001
+[DEBUG] Combined chunk (after XOR): 1001
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['1001', '1100']
+[DEBUG] XORing chunks: ['1001', '1100']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['0001', '0101', '1100', '1110']
+[DEBUG] XORing chunks: ['0001', '0101', '1100', '1110']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1110', '1001']
+[DEBUG] XORing chunks: ['1110', '1001']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['1001', '1100', '1110', '1110', '0001', '1001']
+[DEBUG] XORing chunks: ['1001', '1100', '1110', '1110', '0001', '1001']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1111']
+[DEBUG] XORing chunks: ['1111']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1110', '1001']
+[DEBUG] XORing chunks: ['1110', '1001']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1110', '1100', '0101', '0001', '1001', '1111', '1110']
+[DEBUG] XORing chunks: ['1110', '1100', '0101', '0001', '1001', '1111', '1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['0001', '1100']
+[DEBUG] XORing chunks: ['0001', '1100']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['1001', '1111', '0001', '1001']
+[DEBUG] XORing chunks: ['1001', '1111', '0001', '1001']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Generated droplets: [('0000', '0111'), ('0001', '1101'), ('0010', '1111'), ('0011', '1001'), ('0100', '0101'), ('0101', '0110'), ('0110', '0111'), ('0111', '0101'), ('1000', '1101'), ('1001', '1110'), ('1010', '1111'), ('1011', '0111'), ('1100', '1110'), ('1101', '1101'), ('1110', '1110'), ('1111', '1110')]
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 0000 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 0001 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0010 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1001
+[DEBUG] DNA sequence: GC
+[DEBUG] Droplet with seed 0011 encoded to DNA: GC
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0100 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 0101 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 0110 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0111 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 1000 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1001 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1010 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 1011 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1100 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 1101 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1110 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1111 encoded to DNA: TG
+[DEBUG] All DNA encoded droplets: [('0000', 'CT'), ('0001', 'TC'), ('0010', 'TT'), ('0011', 'GC'), ('0100', 'CC'), ('0101', 'CG'), ('0110', 'CT'), ('0111', 'CC'), ('1000', 'TC'), ('1001', 'TG'), ('1010', 'TT'), ('1011', 'CT'), ('1100', 'TG'), ('1101', 'TC'), ('1110', 'TG'), ('1111', 'TG')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1111', '1110', '1100', '1001', '0001', '0101', '1001', '1110']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'GC' to binary: 1001
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 1111
+[DEBUG] Directly assigned chunk at index 3: 1001
+[DEBUG] Directly assigned chunk at index 5: 0101
+[DEBUG] Directly assigned chunk at index 7: 1110
+[DEBUG] Directly assigned chunk at index 0: 1111
+[DEBUG] Directly assigned chunk at index 1: 1110
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 0111 has one unknown index: 6 and known chunks: ['1110']
+[DEBUG] XORing chunks: ['0111', '1110']
+[DEBUG] XOR result: 1001
+[DEBUG] Inferred missing chunk at index 6: 1001
+[DEBUG] Droplet [3, 2] with binary data 0101 has one unknown index: 2 and known chunks: ['1001']
+[DEBUG] XORing chunks: ['0101', '1001']
+[DEBUG] XOR result: 1100
+[DEBUG] Inferred missing chunk at index 2: 1100
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 0110 has one unknown index: 4 and known chunks: ['0101', '1100', '1110']
+[DEBUG] XORing chunks: ['0110', '0101', '1100', '1110']
+[DEBUG] XOR result: 0001
+[DEBUG] Inferred missing chunk at index 4: 0001
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['1111', '1110', '1100', '1001', '0001', '0101', '1001', '1110']
+[DEBUG] Decoded binary data: 11111110110010010001010110011110
+
+[TEST] Original: 11111110110010010001010110011110
+
+[TEST] Decoded : 11111110110010010001010110011110
+
+[TEST] Testing binary message: 10001000100001011011111011101011
+[DEBUG] Encoding binary data using DNA Fountain: 10001000100001011011111011101011
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1000', '1000', '1000', '0101', '1011', '1110', '1110', '1011']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['1110', '1011']
+[DEBUG] XORing chunks: ['1110', '1011']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['1000', '1011']
+[DEBUG] XORing chunks: ['1000', '1011']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['0101', '1000']
+[DEBUG] XORing chunks: ['0101', '1000']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['1011', '1110', '1000', '1011']
+[DEBUG] XORing chunks: ['1011', '1110', '1000', '1011']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1000', '0101']
+[DEBUG] XORing chunks: ['1000', '0101']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['0101', '1000', '1011', '1000', '1011', '1110']
+[DEBUG] XORing chunks: ['0101', '1000', '1011', '1000', '1011', '1110']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1011']
+[DEBUG] XORing chunks: ['1011']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1011', '1110']
+[DEBUG] XORing chunks: ['1011', '1110']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1011', '1000', '1110', '1011', '1110', '1000', '1000']
+[DEBUG] XORing chunks: ['1011', '1000', '1110', '1011', '1110', '1000', '1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['1011', '1000']
+[DEBUG] XORing chunks: ['1011', '1000']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['0101', '1000', '1011', '1110']
+[DEBUG] XORing chunks: ['0101', '1000', '1011', '1110']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Generated droplets: [('0000', '0101'), ('0001', '0011'), ('0010', '1000'), ('0011', '0101'), ('0100', '1101'), ('0101', '0110'), ('0110', '1101'), ('0111', '1110'), ('1000', '1011'), ('1001', '1011'), ('1010', '1000'), ('1011', '0101'), ('1100', '1000'), ('1101', '0011'), ('1110', '1000'), ('1111', '1000')]
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0000 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 0001 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 0010 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0011 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 0100 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 0101 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 0110 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0111 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 1000 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 1001 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1010 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 1011 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1100 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 1101 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1110 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1111 encoded to DNA: GA
+[DEBUG] All DNA encoded droplets: [('0000', 'CC'), ('0001', 'AT'), ('0010', 'GA'), ('0011', 'CC'), ('0100', 'TC'), ('0101', 'CG'), ('0110', 'TC'), ('0111', 'TG'), ('1000', 'GT'), ('1001', 'GT'), ('1010', 'GA'), ('1011', 'CC'), ('1100', 'GA'), ('1101', 'AT'), ('1110', 'GA'), ('1111', 'GA')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1000', '1000', '1000', '0101', '1011', '1110', '1110', '1011']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 1000
+[DEBUG] Directly assigned chunk at index 3: 0101
+[DEBUG] Directly assigned chunk at index 5: 1110
+[DEBUG] Directly assigned chunk at index 7: 1011
+[DEBUG] Directly assigned chunk at index 0: 1000
+[DEBUG] Directly assigned chunk at index 1: 1000
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 0101 has one unknown index: 6 and known chunks: ['1011']
+[DEBUG] XORing chunks: ['0101', '1011']
+[DEBUG] XOR result: 1110
+[DEBUG] Inferred missing chunk at index 6: 1110
+[DEBUG] Droplet [3, 2] with binary data 1101 has one unknown index: 2 and known chunks: ['0101']
+[DEBUG] XORing chunks: ['1101', '0101']
+[DEBUG] XOR result: 1000
+[DEBUG] Inferred missing chunk at index 2: 1000
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 0110 has one unknown index: 4 and known chunks: ['1110', '1000', '1011']
+[DEBUG] XORing chunks: ['0110', '1110', '1000', '1011']
+[DEBUG] XOR result: 1011
+[DEBUG] Inferred missing chunk at index 4: 1011
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['1000', '1000', '1000', '0101', '1011', '1110', '1110', '1011']
+[DEBUG] Decoded binary data: 10001000100001011011111011101011
+
+[TEST] Original: 10001000100001011011111011101011
+
+[TEST] Decoded : 10001000100001011011111011101011
+
+[TEST] Testing binary message: 01011010010100001110000110110110
+[DEBUG] Encoding binary data using DNA Fountain: 01011010010100001110000110110110
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0101', '1010', '0101', '0000', '1110', '0001', '1011', '0110']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['1011', '0110']
+[DEBUG] XORing chunks: ['1011', '0110']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['0101', '1110']
+[DEBUG] XORing chunks: ['0101', '1110']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['0000']
+[DEBUG] XORing chunks: ['0000']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['0000', '0101']
+[DEBUG] XORing chunks: ['0000', '0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['1110', '0001', '0101', '0110']
+[DEBUG] XORing chunks: ['1110', '0001', '0101', '0110']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1010', '0000']
+[DEBUG] XORing chunks: ['1010', '0000']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0001']
+[DEBUG] XORing chunks: ['0001']
+[DEBUG] XOR result: 0001
+[DEBUG] Combined chunk (after XOR): 0001
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['0000', '0101', '0110', '1010', '1110', '1011']
+[DEBUG] XORing chunks: ['0000', '0101', '0110', '1010', '1110', '1011']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['0110']
+[DEBUG] XORing chunks: ['0110']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['0110', '1011']
+[DEBUG] XORing chunks: ['0110', '1011']
+[DEBUG] XOR result: 1101
+[DEBUG] Combined chunk (after XOR): 1101
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['0110', '0101', '0001', '1110', '1011', '0101', '1010']
+[DEBUG] XORing chunks: ['0110', '0101', '0001', '1110', '1011', '0101', '1010']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['1110', '0101']
+[DEBUG] XORing chunks: ['1110', '0101']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1010']
+[DEBUG] XORing chunks: ['1010']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['0000', '0101', '1110', '1011']
+[DEBUG] XORing chunks: ['0000', '0101', '1110', '1011']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Generated droplets: [('0000', '1101'), ('0001', '1011'), ('0010', '0101'), ('0011', '0000'), ('0100', '0101'), ('0101', '1100'), ('0110', '1010'), ('0111', '0001'), ('1000', '1100'), ('1001', '0110'), ('1010', '0101'), ('1011', '1101'), ('1100', '1000'), ('1101', '1011'), ('1110', '1010'), ('1111', '0000')]
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 0000 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 0001 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0010 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0011 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0100 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 0101 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 0110 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 0001
+[DEBUG] DNA sequence: AC
+[DEBUG] Droplet with seed 0111 encoded to DNA: AC
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 1000 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 1001 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 1010 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1101
+[DEBUG] DNA sequence: TC
+[DEBUG] Droplet with seed 1011 encoded to DNA: TC
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1100 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 1101 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 1110 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 1111 encoded to DNA: AA
+[DEBUG] All DNA encoded droplets: [('0000', 'TC'), ('0001', 'GT'), ('0010', 'CC'), ('0011', 'AA'), ('0100', 'CC'), ('0101', 'TA'), ('0110', 'GG'), ('0111', 'AC'), ('1000', 'TA'), ('1001', 'CG'), ('1010', 'CC'), ('1011', 'TC'), ('1100', 'GA'), ('1101', 'GT'), ('1110', 'GG'), ('1111', 'AA')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0101', '1010', '0101', '0000', '1110', '0001', '1011', '0110']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'AC' to binary: 0001
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'TC' to binary: 1101
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 0101
+[DEBUG] Directly assigned chunk at index 3: 0000
+[DEBUG] Directly assigned chunk at index 5: 0001
+[DEBUG] Directly assigned chunk at index 7: 0110
+[DEBUG] Directly assigned chunk at index 0: 0101
+[DEBUG] Directly assigned chunk at index 1: 1010
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 1101 has one unknown index: 6 and known chunks: ['0110']
+[DEBUG] XORing chunks: ['1101', '0110']
+[DEBUG] XOR result: 1011
+[DEBUG] Inferred missing chunk at index 6: 1011
+[DEBUG] Droplet [3, 2] with binary data 0101 has one unknown index: 2 and known chunks: ['0000']
+[DEBUG] XORing chunks: ['0101', '0000']
+[DEBUG] XOR result: 0101
+[DEBUG] Inferred missing chunk at index 2: 0101
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 1100 has one unknown index: 4 and known chunks: ['0001', '0101', '0110']
+[DEBUG] XORing chunks: ['1100', '0001', '0101', '0110']
+[DEBUG] XOR result: 1110
+[DEBUG] Inferred missing chunk at index 4: 1110
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['0101', '1010', '0101', '0000', '1110', '0001', '1011', '0110']
+[DEBUG] Decoded binary data: 01011010010100001110000110110110
+
+[TEST] Original: 01011010010100001110000110110110
+
+[TEST] Decoded : 01011010010100001110000110110110
+
+[TEST] Testing binary message: 11101000111011000001001101001100
+[DEBUG] Encoding binary data using DNA Fountain: 11101000111011000001001101001100
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1110', '1000', '1110', '1100', '0001', '0011', '0100', '1100']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0100', '1100']
+[DEBUG] XORing chunks: ['0100', '1100']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['1110', '0001']
+[DEBUG] XORing chunks: ['1110', '0001']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['1100']
+[DEBUG] XORing chunks: ['1100']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['1100', '1110']
+[DEBUG] XORing chunks: ['1100', '1110']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['0001', '0011', '1110', '1100']
+[DEBUG] XORing chunks: ['0001', '0011', '1110', '1100']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1000', '1100']
+[DEBUG] XORing chunks: ['1000', '1100']
+[DEBUG] XOR result: 0100
+[DEBUG] Combined chunk (after XOR): 0100
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0011']
+[DEBUG] XORing chunks: ['0011']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['1100', '1110', '1100', '1000', '0001', '0100']
+[DEBUG] XORing chunks: ['1100', '1110', '1100', '1000', '0001', '0100']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1100']
+[DEBUG] XORing chunks: ['1100']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1100', '0100']
+[DEBUG] XORing chunks: ['1100', '0100']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1100', '1110', '0011', '0001', '0100', '1110', '1000']
+[DEBUG] XORing chunks: ['1100', '1110', '0011', '0001', '0100', '1110', '1000']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['0001', '1110']
+[DEBUG] XORing chunks: ['0001', '1110']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['1100', '1110', '0001', '0100']
+[DEBUG] XORing chunks: ['1100', '1110', '0001', '0100']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Generated droplets: [('0000', '1000'), ('0001', '1111'), ('0010', '1110'), ('0011', '1100'), ('0100', '0010'), ('0101', '0000'), ('0110', '0100'), ('0111', '0011'), ('1000', '0011'), ('1001', '1100'), ('1010', '1110'), ('1011', '1000'), ('1100', '0010'), ('1101', '1111'), ('1110', '1000'), ('1111', '0111')]
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 0000 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0001 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0010 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 0011 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0100 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0101 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0100
+[DEBUG] DNA sequence: CA
+[DEBUG] Droplet with seed 0110 encoded to DNA: CA
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 0111 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 1000 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 1001 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1010 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1011 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1100 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1101 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1110 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 1111 encoded to DNA: CT
+[DEBUG] All DNA encoded droplets: [('0000', 'GA'), ('0001', 'TT'), ('0010', 'TG'), ('0011', 'TA'), ('0100', 'AG'), ('0101', 'AA'), ('0110', 'CA'), ('0111', 'AT'), ('1000', 'AT'), ('1001', 'TA'), ('1010', 'TG'), ('1011', 'GA'), ('1100', 'AG'), ('1101', 'TT'), ('1110', 'GA'), ('1111', 'CT')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1110', '1000', '1110', '1100', '0001', '0011', '0100', '1100']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'CA' to binary: 0100
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 1110
+[DEBUG] Directly assigned chunk at index 3: 1100
+[DEBUG] Directly assigned chunk at index 5: 0011
+[DEBUG] Directly assigned chunk at index 7: 1100
+[DEBUG] Directly assigned chunk at index 0: 1110
+[DEBUG] Directly assigned chunk at index 1: 1000
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 1000 has one unknown index: 6 and known chunks: ['1100']
+[DEBUG] XORing chunks: ['1000', '1100']
+[DEBUG] XOR result: 0100
+[DEBUG] Inferred missing chunk at index 6: 0100
+[DEBUG] Droplet [3, 2] with binary data 0010 has one unknown index: 2 and known chunks: ['1100']
+[DEBUG] XORing chunks: ['0010', '1100']
+[DEBUG] XOR result: 1110
+[DEBUG] Inferred missing chunk at index 2: 1110
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 0000 has one unknown index: 4 and known chunks: ['0011', '1110', '1100']
+[DEBUG] XORing chunks: ['0000', '0011', '1110', '1100']
+[DEBUG] XOR result: 0001
+[DEBUG] Inferred missing chunk at index 4: 0001
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['1110', '1000', '1110', '1100', '0001', '0011', '0100', '1100']
+[DEBUG] Decoded binary data: 11101000111011000001001101001100
+
+[TEST] Original: 11101000111011000001001101001100
+
+[TEST] Decoded : 11101000111011000001001101001100
+
+[TEST] Testing binary message: 01101110000100001110000001110101
+[DEBUG] Encoding binary data using DNA Fountain: 01101110000100001110000001110101
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0110', '1110', '0001', '0000', '1110', '0000', '0111', '0101']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0111', '0101']
+[DEBUG] XORing chunks: ['0111', '0101']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['0001', '1110']
+[DEBUG] XORing chunks: ['0001', '1110']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0110']
+[DEBUG] XORing chunks: ['0110']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['0000']
+[DEBUG] XORing chunks: ['0000']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['0000', '0001']
+[DEBUG] XORing chunks: ['0000', '0001']
+[DEBUG] XOR result: 0001
+[DEBUG] Combined chunk (after XOR): 0001
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['1110', '0000', '0001', '0101']
+[DEBUG] XORing chunks: ['1110', '0000', '0001', '0101']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1110', '0000']
+[DEBUG] XORing chunks: ['1110', '0000']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0000']
+[DEBUG] XORing chunks: ['0000']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['0000', '0001', '0101', '1110', '1110', '0111']
+[DEBUG] XORing chunks: ['0000', '0001', '0101', '1110', '1110', '0111']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0110']
+[DEBUG] XORing chunks: ['0110']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['0101', '0111']
+[DEBUG] XORing chunks: ['0101', '0111']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['0101', '0001', '0000', '1110', '0111', '0110', '1110']
+[DEBUG] XORing chunks: ['0101', '0001', '0000', '1110', '0111', '0110', '1110']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['1110', '0001']
+[DEBUG] XORing chunks: ['1110', '0001']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1110']
+[DEBUG] XORing chunks: ['1110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['0000', '0110', '1110', '0111']
+[DEBUG] XORing chunks: ['0000', '0110', '1110', '0111']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Generated droplets: [('0000', '0010'), ('0001', '1111'), ('0010', '0110'), ('0011', '0000'), ('0100', '0001'), ('0101', '1010'), ('0110', '1110'), ('0111', '0000'), ('1000', '0011'), ('1001', '0101'), ('1010', '0110'), ('1011', '0010'), ('1100', '0101'), ('1101', '1111'), ('1110', '1110'), ('1111', '1111')]
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0000 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0001 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 0010 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0011 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0001
+[DEBUG] DNA sequence: AC
+[DEBUG] Droplet with seed 0100 encoded to DNA: AC
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 0101 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0110 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0111 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 1000 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 1001 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 1010 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1011 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 1100 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1101 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1110 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1111 encoded to DNA: TT
+[DEBUG] All DNA encoded droplets: [('0000', 'AG'), ('0001', 'TT'), ('0010', 'CG'), ('0011', 'AA'), ('0100', 'AC'), ('0101', 'GG'), ('0110', 'TG'), ('0111', 'AA'), ('1000', 'AT'), ('1001', 'CC'), ('1010', 'CG'), ('1011', 'AG'), ('1100', 'CC'), ('1101', 'TT'), ('1110', 'TG'), ('1111', 'TT')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0110', '1110', '0001', '0000', '1110', '0000', '0111', '0101']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'AC' to binary: 0001
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 0110
+[DEBUG] Directly assigned chunk at index 3: 0000
+[DEBUG] Directly assigned chunk at index 5: 0000
+[DEBUG] Directly assigned chunk at index 7: 0101
+[DEBUG] Directly assigned chunk at index 0: 0110
+[DEBUG] Directly assigned chunk at index 1: 1110
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 0010 has one unknown index: 6 and known chunks: ['0101']
+[DEBUG] XORing chunks: ['0010', '0101']
+[DEBUG] XOR result: 0111
+[DEBUG] Inferred missing chunk at index 6: 0111
+[DEBUG] Droplet [3, 2] with binary data 0001 has one unknown index: 2 and known chunks: ['0000']
+[DEBUG] XORing chunks: ['0001', '0000']
+[DEBUG] XOR result: 0001
+[DEBUG] Inferred missing chunk at index 2: 0001
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 1010 has one unknown index: 4 and known chunks: ['0000', '0001', '0101']
+[DEBUG] XORing chunks: ['1010', '0000', '0001', '0101']
+[DEBUG] XOR result: 1110
+[DEBUG] Inferred missing chunk at index 4: 1110
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['0110', '1110', '0001', '0000', '1110', '0000', '0111', '0101']
+[DEBUG] Decoded binary data: 01101110000100001110000001110101
+
+[TEST] Original: 01101110000100001110000001110101
+
+[TEST] Decoded : 01101110000100001110000001110101
+
+[TEST] Testing binary message: 00100110011110010110101100100010
+[DEBUG] Encoding binary data using DNA Fountain: 00100110011110010110101100100010
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0010', '0110', '0111', '1001', '0110', '1011', '0010', '0010']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0010', '0010']
+[DEBUG] XORing chunks: ['0010', '0010']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['0111', '0110']
+[DEBUG] XORing chunks: ['0111', '0110']
+[DEBUG] XOR result: 0001
+[DEBUG] Combined chunk (after XOR): 0001
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0010']
+[DEBUG] XORing chunks: ['0010']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['1001']
+[DEBUG] XORing chunks: ['1001']
+[DEBUG] XOR result: 1001
+[DEBUG] Combined chunk (after XOR): 1001
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['1001', '0111']
+[DEBUG] XORing chunks: ['1001', '0111']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['0110', '1011', '0111', '0010']
+[DEBUG] XORing chunks: ['0110', '1011', '0111', '0010']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['0110', '1001']
+[DEBUG] XORing chunks: ['0110', '1001']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['1011']
+[DEBUG] XORing chunks: ['1011']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['1001', '0111', '0010', '0110', '0110', '0010']
+[DEBUG] XORing chunks: ['1001', '0111', '0010', '0110', '0110', '0010']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['0010']
+[DEBUG] XORing chunks: ['0010']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0010']
+[DEBUG] XORing chunks: ['0010']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['0010', '0010']
+[DEBUG] XORing chunks: ['0010', '0010']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['0010', '0111', '1011', '0110', '0010', '0010', '0110']
+[DEBUG] XORing chunks: ['0010', '0111', '1011', '0110', '0010', '0010', '0110']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['0110', '0111']
+[DEBUG] XORing chunks: ['0110', '0111']
+[DEBUG] XOR result: 0001
+[DEBUG] Combined chunk (after XOR): 0001
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['0110']
+[DEBUG] XORing chunks: ['0110']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['1001', '0010', '0110', '0010']
+[DEBUG] XORing chunks: ['1001', '0010', '0110', '0010']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Generated droplets: [('0000', '0000'), ('0001', '0001'), ('0010', '0010'), ('0011', '1001'), ('0100', '1110'), ('0101', '1000'), ('0110', '1111'), ('0111', '1011'), ('1000', '1110'), ('1001', '0010'), ('1010', '0010'), ('1011', '0000'), ('1100', '1110'), ('1101', '0001'), ('1110', '0110'), ('1111', '1111')]
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 0000 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 0001
+[DEBUG] DNA sequence: AC
+[DEBUG] Droplet with seed 0001 encoded to DNA: AC
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0010 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 1001
+[DEBUG] DNA sequence: GC
+[DEBUG] Droplet with seed 0011 encoded to DNA: GC
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0100 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 0101 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0110 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 0111 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1000 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1001 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1010 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 1011 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1100 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0001
+[DEBUG] DNA sequence: AC
+[DEBUG] Droplet with seed 1101 encoded to DNA: AC
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 1110 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1111 encoded to DNA: TT
+[DEBUG] All DNA encoded droplets: [('0000', 'AA'), ('0001', 'AC'), ('0010', 'AG'), ('0011', 'GC'), ('0100', 'TG'), ('0101', 'GA'), ('0110', 'TT'), ('0111', 'GT'), ('1000', 'TG'), ('1001', 'AG'), ('1010', 'AG'), ('1011', 'AA'), ('1100', 'TG'), ('1101', 'AC'), ('1110', 'CG'), ('1111', 'TT')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0010', '0110', '0111', '1001', '0110', '1011', '0010', '0010']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'AC' to binary: 0001
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'GC' to binary: 1001
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'AC' to binary: 0001
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 0010
+[DEBUG] Directly assigned chunk at index 3: 1001
+[DEBUG] Directly assigned chunk at index 5: 1011
+[DEBUG] Directly assigned chunk at index 7: 0010
+[DEBUG] Directly assigned chunk at index 0: 0010
+[DEBUG] Directly assigned chunk at index 1: 0110
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 0000 has one unknown index: 6 and known chunks: ['0010']
+[DEBUG] XORing chunks: ['0000', '0010']
+[DEBUG] XOR result: 0010
+[DEBUG] Inferred missing chunk at index 6: 0010
+[DEBUG] Droplet [3, 2] with binary data 1110 has one unknown index: 2 and known chunks: ['1001']
+[DEBUG] XORing chunks: ['1110', '1001']
+[DEBUG] XOR result: 0111
+[DEBUG] Inferred missing chunk at index 2: 0111
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 1000 has one unknown index: 4 and known chunks: ['1011', '0111', '0010']
+[DEBUG] XORing chunks: ['1000', '1011', '0111', '0010']
+[DEBUG] XOR result: 0110
+[DEBUG] Inferred missing chunk at index 4: 0110
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['0010', '0110', '0111', '1001', '0110', '1011', '0010', '0010']
+[DEBUG] Decoded binary data: 00100110011110010110101100100010
+
+[TEST] Original: 00100110011110010110101100100010
+
+[TEST] Decoded : 00100110011110010110101100100010
+
+[TEST] Testing binary message: 10001010111101010000001001001011
+[DEBUG] Encoding binary data using DNA Fountain: 10001010111101010000001001001011
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1000', '1010', '1111', '0101', '0000', '0010', '0100', '1011']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0100', '1011']
+[DEBUG] XORing chunks: ['0100', '1011']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['1111', '0000']
+[DEBUG] XORing chunks: ['1111', '0000']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['0101', '1111']
+[DEBUG] XORing chunks: ['0101', '1111']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['0000', '0010', '1111', '1011']
+[DEBUG] XORing chunks: ['0000', '0010', '1111', '1011']
+[DEBUG] XOR result: 0110
+[DEBUG] Combined chunk (after XOR): 0110
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['1010', '0101']
+[DEBUG] XORing chunks: ['1010', '0101']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0010']
+[DEBUG] XORing chunks: ['0010']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['0101', '1111', '1011', '1010', '0000', '0100']
+[DEBUG] XORing chunks: ['0101', '1111', '1011', '1010', '0000', '0100']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['1011']
+[DEBUG] XORing chunks: ['1011']
+[DEBUG] XOR result: 1011
+[DEBUG] Combined chunk (after XOR): 1011
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['1000']
+[DEBUG] XORing chunks: ['1000']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['1011', '0100']
+[DEBUG] XORing chunks: ['1011', '0100']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['1011', '1111', '0010', '0000', '0100', '1000', '1010']
+[DEBUG] XORing chunks: ['1011', '1111', '0010', '0000', '0100', '1000', '1010']
+[DEBUG] XOR result: 0000
+[DEBUG] Combined chunk (after XOR): 0000
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['0000', '1111']
+[DEBUG] XORing chunks: ['0000', '1111']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['1010']
+[DEBUG] XORing chunks: ['1010']
+[DEBUG] XOR result: 1010
+[DEBUG] Combined chunk (after XOR): 1010
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['0101', '1000', '0000', '0100']
+[DEBUG] XORing chunks: ['0101', '1000', '0000', '0100']
+[DEBUG] XOR result: 1001
+[DEBUG] Combined chunk (after XOR): 1001
+[DEBUG] Generated droplets: [('0000', '1111'), ('0001', '1111'), ('0010', '1000'), ('0011', '0101'), ('0100', '1010'), ('0101', '0110'), ('0110', '1111'), ('0111', '0010'), ('1000', '1111'), ('1001', '1011'), ('1010', '1000'), ('1011', '1111'), ('1100', '0000'), ('1101', '1111'), ('1110', '1010'), ('1111', '1001')]
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0000 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0001 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 0010 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0011 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 0100 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 0110
+[DEBUG] DNA sequence: CG
+[DEBUG] Droplet with seed 0101 encoded to DNA: CG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0110 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 0111 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1000 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1011
+[DEBUG] DNA sequence: GT
+[DEBUG] Droplet with seed 1001 encoded to DNA: GT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1010 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1011 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 0000
+[DEBUG] DNA sequence: AA
+[DEBUG] Droplet with seed 1100 encoded to DNA: AA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 1101 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1010
+[DEBUG] DNA sequence: GG
+[DEBUG] Droplet with seed 1110 encoded to DNA: GG
+[DEBUG] Mapping binary string to DNA: 1001
+[DEBUG] DNA sequence: GC
+[DEBUG] Droplet with seed 1111 encoded to DNA: GC
+[DEBUG] All DNA encoded droplets: [('0000', 'TT'), ('0001', 'TT'), ('0010', 'GA'), ('0011', 'CC'), ('0100', 'GG'), ('0101', 'CG'), ('0110', 'TT'), ('0111', 'AG'), ('1000', 'TT'), ('1001', 'GT'), ('1010', 'GA'), ('1011', 'TT'), ('1100', 'AA'), ('1101', 'TT'), ('1110', 'GG'), ('1111', 'GC')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['1000', '1010', '1111', '0101', '0000', '0010', '0100', '1011']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'CG' to binary: 0110
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'GT' to binary: 1011
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'AA' to binary: 0000
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'GG' to binary: 1010
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'GC' to binary: 1001
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 1000
+[DEBUG] Directly assigned chunk at index 3: 0101
+[DEBUG] Directly assigned chunk at index 5: 0010
+[DEBUG] Directly assigned chunk at index 7: 1011
+[DEBUG] Directly assigned chunk at index 0: 1000
+[DEBUG] Directly assigned chunk at index 1: 1010
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 1111 has one unknown index: 6 and known chunks: ['1011']
+[DEBUG] XORing chunks: ['1111', '1011']
+[DEBUG] XOR result: 0100
+[DEBUG] Inferred missing chunk at index 6: 0100
+[DEBUG] Droplet [3, 2] with binary data 1010 has one unknown index: 2 and known chunks: ['0101']
+[DEBUG] XORing chunks: ['1010', '0101']
+[DEBUG] XOR result: 1111
+[DEBUG] Inferred missing chunk at index 2: 1111
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 0110 has one unknown index: 4 and known chunks: ['0010', '1111', '1011']
+[DEBUG] XORing chunks: ['0110', '0010', '1111', '1011']
+[DEBUG] XOR result: 0000
+[DEBUG] Inferred missing chunk at index 4: 0000
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['1000', '1010', '1111', '0101', '0000', '0010', '0100', '1011']
+[DEBUG] Decoded binary data: 10001010111101010000001001001011
+
+[TEST] Original: 10001010111101010000001001001011
+
+[TEST] Decoded : 10001010111101010000001001001011
+
+[TEST] Testing binary message: 01010111010110011011001101010010
+[DEBUG] Encoding binary data using DNA Fountain: 01010111010110011011001101010010
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0101', '0111', '0101', '1001', '1011', '0011', '0101', '0010']
+[DEBUG] Generating droplets using degree map.
+[DEBUG] Available chunk indices: [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] Processing droplet with seed 0000 and degree 2
+[DEBUG] With seed 0000, sampled indices: [6, 7]
+[DEBUG] Selected chunks: ['0101', '0010']
+[DEBUG] XORing chunks: ['0101', '0010']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 0001 and degree 2
+[DEBUG] With seed 0001, sampled indices: [2, 4]
+[DEBUG] Selected chunks: ['0101', '1011']
+[DEBUG] XORing chunks: ['0101', '1011']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0010 and degree 1
+[DEBUG] With seed 0010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 0011 and degree 1
+[DEBUG] With seed 0011, sampled indices: [3]
+[DEBUG] Selected chunks: ['1001']
+[DEBUG] XORing chunks: ['1001']
+[DEBUG] XOR result: 1001
+[DEBUG] Combined chunk (after XOR): 1001
+[DEBUG] Processing droplet with seed 0100 and degree 2
+[DEBUG] With seed 0100, sampled indices: [3, 2]
+[DEBUG] Selected chunks: ['1001', '0101']
+[DEBUG] XORing chunks: ['1001', '0101']
+[DEBUG] XOR result: 1100
+[DEBUG] Combined chunk (after XOR): 1100
+[DEBUG] Processing droplet with seed 0101 and degree 4
+[DEBUG] With seed 0101, sampled indices: [4, 5, 2, 7]
+[DEBUG] Selected chunks: ['1011', '0011', '0101', '0010']
+[DEBUG] XORing chunks: ['1011', '0011', '0101', '0010']
+[DEBUG] XOR result: 1111
+[DEBUG] Combined chunk (after XOR): 1111
+[DEBUG] Processing droplet with seed 0110 and degree 2
+[DEBUG] With seed 0110, sampled indices: [1, 3]
+[DEBUG] Selected chunks: ['0111', '1001']
+[DEBUG] XORing chunks: ['0111', '1001']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 0111 and degree 1
+[DEBUG] With seed 0111, sampled indices: [5]
+[DEBUG] Selected chunks: ['0011']
+[DEBUG] XORing chunks: ['0011']
+[DEBUG] XOR result: 0011
+[DEBUG] Combined chunk (after XOR): 0011
+[DEBUG] Processing droplet with seed 1000 and degree 6
+[DEBUG] With seed 1000, sampled indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Selected chunks: ['1001', '0101', '0010', '0111', '1011', '0101']
+[DEBUG] XORing chunks: ['1001', '0101', '0010', '0111', '1011', '0101']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 1001 and degree 1
+[DEBUG] With seed 1001, sampled indices: [7]
+[DEBUG] Selected chunks: ['0010']
+[DEBUG] XORing chunks: ['0010']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Processing droplet with seed 1010 and degree 1
+[DEBUG] With seed 1010, sampled indices: [0]
+[DEBUG] Selected chunks: ['0101']
+[DEBUG] XORing chunks: ['0101']
+[DEBUG] XOR result: 0101
+[DEBUG] Combined chunk (after XOR): 0101
+[DEBUG] Processing droplet with seed 1011 and degree 2
+[DEBUG] With seed 1011, sampled indices: [7, 6]
+[DEBUG] Selected chunks: ['0010', '0101']
+[DEBUG] XORing chunks: ['0010', '0101']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 1100 and degree 7
+[DEBUG] With seed 1100, sampled indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Selected chunks: ['0010', '0101', '0011', '1011', '0101', '0101', '0111']
+[DEBUG] XORing chunks: ['0010', '0101', '0011', '1011', '0101', '0101', '0111']
+[DEBUG] XOR result: 1000
+[DEBUG] Combined chunk (after XOR): 1000
+[DEBUG] Processing droplet with seed 1101 and degree 2
+[DEBUG] With seed 1101, sampled indices: [4, 2]
+[DEBUG] Selected chunks: ['1011', '0101']
+[DEBUG] XORing chunks: ['1011', '0101']
+[DEBUG] XOR result: 1110
+[DEBUG] Combined chunk (after XOR): 1110
+[DEBUG] Processing droplet with seed 1110 and degree 1
+[DEBUG] With seed 1110, sampled indices: [1]
+[DEBUG] Selected chunks: ['0111']
+[DEBUG] XORing chunks: ['0111']
+[DEBUG] XOR result: 0111
+[DEBUG] Combined chunk (after XOR): 0111
+[DEBUG] Processing droplet with seed 1111 and degree 4
+[DEBUG] With seed 1111, sampled indices: [3, 0, 4, 6]
+[DEBUG] Selected chunks: ['1001', '0101', '1011', '0101']
+[DEBUG] XORing chunks: ['1001', '0101', '1011', '0101']
+[DEBUG] XOR result: 0010
+[DEBUG] Combined chunk (after XOR): 0010
+[DEBUG] Generated droplets: [('0000', '0111'), ('0001', '1110'), ('0010', '0101'), ('0011', '1001'), ('0100', '1100'), ('0101', '1111'), ('0110', '1110'), ('0111', '0011'), ('1000', '0111'), ('1001', '0010'), ('1010', '0101'), ('1011', '0111'), ('1100', '1000'), ('1101', '1110'), ('1110', '0111'), ('1111', '0010')]
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 0000 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0001 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 0010 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 1001
+[DEBUG] DNA sequence: GC
+[DEBUG] Droplet with seed 0011 encoded to DNA: GC
+[DEBUG] Mapping binary string to DNA: 1100
+[DEBUG] DNA sequence: TA
+[DEBUG] Droplet with seed 0100 encoded to DNA: TA
+[DEBUG] Mapping binary string to DNA: 1111
+[DEBUG] DNA sequence: TT
+[DEBUG] Droplet with seed 0101 encoded to DNA: TT
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 0110 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0011
+[DEBUG] DNA sequence: AT
+[DEBUG] Droplet with seed 0111 encoded to DNA: AT
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 1000 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1001 encoded to DNA: AG
+[DEBUG] Mapping binary string to DNA: 0101
+[DEBUG] DNA sequence: CC
+[DEBUG] Droplet with seed 1010 encoded to DNA: CC
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 1011 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 1000
+[DEBUG] DNA sequence: GA
+[DEBUG] Droplet with seed 1100 encoded to DNA: GA
+[DEBUG] Mapping binary string to DNA: 1110
+[DEBUG] DNA sequence: TG
+[DEBUG] Droplet with seed 1101 encoded to DNA: TG
+[DEBUG] Mapping binary string to DNA: 0111
+[DEBUG] DNA sequence: CT
+[DEBUG] Droplet with seed 1110 encoded to DNA: CT
+[DEBUG] Mapping binary string to DNA: 0010
+[DEBUG] DNA sequence: AG
+[DEBUG] Droplet with seed 1111 encoded to DNA: AG
+[DEBUG] All DNA encoded droplets: [('0000', 'CT'), ('0001', 'TG'), ('0010', 'CC'), ('0011', 'GC'), ('0100', 'TA'), ('0101', 'TT'), ('0110', 'TG'), ('0111', 'AT'), ('1000', 'CT'), ('1001', 'AG'), ('1010', 'CC'), ('1011', 'CT'), ('1100', 'GA'), ('1101', 'TG'), ('1110', 'CT'), ('1111', 'AG')]
+[DEBUG] Splitting binary string into chunks of size 4.
+[DEBUG] Resulting chunks: ['0101', '0111', '0101', '1001', '1011', '0011', '0101', '0010']
+[DEBUG] Decoding DNA encoded droplets. Expected number of chunks: 8
+[DEBUG] Droplet with seed 0000: re-generated indices: [6, 7]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 0001: re-generated indices: [2, 4]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 0011: re-generated indices: [3]
+[DEBUG] Converted DNA 'GC' to binary: 1001
+[DEBUG] Droplet with seed 0100: re-generated indices: [3, 2]
+[DEBUG] Converted DNA 'TA' to binary: 1100
+[DEBUG] Droplet with seed 0101: re-generated indices: [4, 5, 2, 7]
+[DEBUG] Converted DNA 'TT' to binary: 1111
+[DEBUG] Droplet with seed 0110: re-generated indices: [1, 3]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 0111: re-generated indices: [5]
+[DEBUG] Converted DNA 'AT' to binary: 0011
+[DEBUG] Droplet with seed 1000: re-generated indices: [3, 2, 7, 1, 4, 6]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 1001: re-generated indices: [7]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Droplet with seed 1010: re-generated indices: [0]
+[DEBUG] Converted DNA 'CC' to binary: 0101
+[DEBUG] Droplet with seed 1011: re-generated indices: [7, 6]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 1100: re-generated indices: [7, 2, 5, 4, 6, 0, 1]
+[DEBUG] Converted DNA 'GA' to binary: 1000
+[DEBUG] Droplet with seed 1101: re-generated indices: [4, 2]
+[DEBUG] Converted DNA 'TG' to binary: 1110
+[DEBUG] Droplet with seed 1110: re-generated indices: [1]
+[DEBUG] Converted DNA 'CT' to binary: 0111
+[DEBUG] Droplet with seed 1111: re-generated indices: [3, 0, 4, 6]
+[DEBUG] Converted DNA 'AG' to binary: 0010
+[DEBUG] Initial reconstructed chunks: [None, None, None, None, None, None, None, None]
+[DEBUG] Directly assigned chunk at index 0: 0101
+[DEBUG] Directly assigned chunk at index 3: 1001
+[DEBUG] Directly assigned chunk at index 5: 0011
+[DEBUG] Directly assigned chunk at index 7: 0010
+[DEBUG] Directly assigned chunk at index 0: 0101
+[DEBUG] Directly assigned chunk at index 1: 0111
+[DEBUG] Decoding iteration 1/8
+[DEBUG] Droplet [6, 7] with binary data 0111 has one unknown index: 6 and known chunks: ['0010']
+[DEBUG] XORing chunks: ['0111', '0010']
+[DEBUG] XOR result: 0101
+[DEBUG] Inferred missing chunk at index 6: 0101
+[DEBUG] Droplet [3, 2] with binary data 1100 has one unknown index: 2 and known chunks: ['1001']
+[DEBUG] XORing chunks: ['1100', '1001']
+[DEBUG] XOR result: 0101
+[DEBUG] Inferred missing chunk at index 2: 0101
+[DEBUG] Droplet [4, 5, 2, 7] with binary data 1111 has one unknown index: 4 and known chunks: ['0011', '0101', '0010']
+[DEBUG] XORing chunks: ['1111', '0011', '0101', '0010']
+[DEBUG] XOR result: 1011
+[DEBUG] Inferred missing chunk at index 4: 1011
+[DEBUG] Decoding iteration 2/8
+[DEBUG] Decoding iteration 3/8
+[DEBUG] Decoding iteration 4/8
+[DEBUG] Decoding iteration 5/8
+[DEBUG] Decoding iteration 6/8
+[DEBUG] Decoding iteration 7/8
+[DEBUG] Decoding iteration 8/8
+[DEBUG] Final reconstructed binary chunks: ['0101', '0111', '0101', '1001', '1011', '0011', '0101', '0010']
+[DEBUG] Decoded binary data: 01010111010110011011001101010010
+
+[TEST] Original: 01010111010110011011001101010010
+
+[TEST] Decoded : 01010111010110011011001101010010
+
+✅ All tests passed!
