@@ -14,7 +14,7 @@ class DNAFountain:
     BINARY_TO_DNA = {'00': 'A', '01': 'C', '10': 'G', '11': 'T'}
     DNA_TO_BINARY = {v: k for k, v in BINARY_TO_DNA.items()}
 
-    def __init__(self, chunk_size=4, log_level="DEBUG"):
+    def __init__(self, chunk_size=4):
         self.chunk_size = chunk_size
         # Precompute a mapping from droplet seed to its degree.
         self.degree_map = {seed: degree for seed, degree in self.DEGREE_TABLE}
@@ -172,7 +172,7 @@ class DNAFountainTester:
         print(msg)
         logging.info(msg)
 
-        self.dna_fountain = DNAFountain(chunk_size=self.chunk_size, log_level="DEBUG")
+        self.dna_fountain = DNAFountain(chunk_size=self.chunk_size)
         passed = True
         
         for binary_message in self.binary_messages:
