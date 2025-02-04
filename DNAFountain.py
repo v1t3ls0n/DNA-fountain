@@ -1,24 +1,3 @@
-#!/usr/bin/env python3
-"""
-DNA Fountain Project
---------------------
-
-This project demonstrates a simplified DNA Fountain encoding and decoding system.
-It encodes binary data into "droplets" (small units) using an XOR-based combination
-of data chunks and maps the resulting binary data to a DNA sequence (using the nucleotides A, C, G, T).
-
-Key Components:
-- DNAFountain: Core class that implements the encoding and decoding routines.
-- DNAFountainTester: Helper class that runs tests on a set of binary messages to ensure
-  that encoding to DNA and decoding back to binary works correctly.
-- main: Entry point for command-line execution, which configures logging and runs tests.
-
-The encoding strategy uses a pre-defined "degree table" that assigns a degree (number of chunks
-to combine) to each droplet based on its seed value. The droplets are generated using a local
-random generator (seeded by the droplet's binary seed) so that the same combination of chunks
-can be reproduced during decoding.
-"""
-
 import logging
 import random
 import sys
