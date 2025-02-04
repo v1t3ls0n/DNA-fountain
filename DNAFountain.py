@@ -1,5 +1,6 @@
 import logging
 import random
+from random import Random
 import sys
 sys.stdout.reconfigure(encoding='utf-8')  # Ensure that the standard output encoding is UTF-8.
 
@@ -73,8 +74,7 @@ class DNAFountain:
 
         for droplet_seed, droplet_degree in self.degree_map.items():
             logging.debug(">> Processing droplet with seed '%s' (degree %d)", droplet_seed, droplet_degree)
-            local_random = random.Random(int(droplet_seed, 2))
-            selected_indices = local_random.sample(chunk_indices, min(droplet_degree, len(chunks)))
+            selected_indices = Random(int(droplet_seed, 2)).sample(chunk_indices, min(droplet_degree, len(chunks)))
             logging.debug("   Selected indices: %s", selected_indices)
             selected_chunks = [chunks[i] for i in selected_indices]
             logging.debug("   Selected chunks: %s", selected_chunks)
@@ -201,8 +201,7 @@ class DNAFountain:
             seed_binary = ''.join(self.DNA_TO_BINARY[base] for base in droplet_seed_dna)
             content_binary = ''.join(self.DNA_TO_BINARY[char] for char in dna_content)
             droplet_degree = self.degree_map[seed_binary]
-            local_random = random.Random(int(seed_binary, 2))
-            selected_indices = local_random.sample(list(range(num_chunks)), min(droplet_degree, num_chunks))
+            selected_indices = Random(int(seed_binary, 2)).sample(list(range(num_chunks)), min(droplet_degree, num_chunks))
             logging.debug("Droplet: Seed (DNA) '%s' -> Seed (binary) '%s' -> Indices %s | "
                           "Data Payload (DNA): '%s' -> Data Payload (binary): '%s'",
                           droplet_seed_dna, seed_binary, selected_indices, dna_content, content_binary)

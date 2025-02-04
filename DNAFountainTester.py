@@ -59,6 +59,9 @@ class DNAFountainTester:
                 len(binary_message) // self.chunk_size
             )
 
+            msg = "[TEST] Original binary message: {}".format(binary_message)
+            logging.info(msg)
+
             msg = "[TEST] Full DNA encoded message: {}".format(full_dna_message)
             print(msg)
             logging.info(msg)
@@ -66,6 +69,7 @@ class DNAFountainTester:
             msg = "[TEST] Decoded binary message: {}".format(decoded_binary_from_full)
             print(msg)
             logging.info(msg)
+
 
             if decoded_binary_from_full != binary_message:
                 msg = "[ERROR] Decoding failed for this message (full DNA string approach)."
