@@ -1,5 +1,3 @@
-Here is the beautified README file with icons:
-
 # 🧬 DNA Fountain
 
 ## 📖 Overview
@@ -34,5 +32,3 @@ The main entry point for the project is the `main.py` file, which configures log
 
 ## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Feel free to modify and expand this README as needed for your project.
